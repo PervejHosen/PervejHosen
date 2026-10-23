@@ -65,17 +65,9 @@ def section_label(x, y, code, title):
 
 # ---------------------------------------------------------------- header
 def header():
-    w, h = 900, 250
+    w, h = 900, 222
     b = [grid(w, h)]
-    b.append(f'<rect x="0" y="0" width="{w}" height="34" rx="14" fill="{PANEL}"/>'
-             f'<rect x="0" y="20" width="{w}" height="14" fill="{PANEL}"/>'
-             f'<path d="M0 34H{w}" stroke="{LINE}"/>')
-    for i, c in enumerate(["#FF5F57", "#FEBC2E", "#28C840"]):
-        b.append(f'<circle cx="{22 + i * 18}" cy="17" r="5" fill="{c}"/>')
-    b.append(f'<text x="{w / 2}" y="21" text-anchor="middle" class="mono" font-size="11.5" '
-             f'fill="{MUTED}">pervej_hosen.pbix — Profile Overview</text>')
-    b.append(f'<circle cx="{w - 70}" cy="17" r="4" fill="#28C840" class="pulse"/>'
-             f'<text x="{w - 60}" y="21" class="mono" font-size="11" fill="{MUTED}">LIVE</text>')
+    b.append('<g transform="translate(0,-24)">')
 
     b.append(f'<g class="fade"><text x="40" y="78" class="mono" font-size="12" fill="{CORAL}" '
              f'letter-spacing="2">BUSINESS INTELLIGENCE · ANALYTICS ENGINEERING</text>'
@@ -112,6 +104,7 @@ def header():
     b.append(f'<polyline class="draw" points="{pts}" fill="none" stroke="{TXT}" '
              f'stroke-width="1.5" stroke-opacity=".55" stroke-linecap="round"/>')
     b.append(f'<path d="M{px + 16} {base}H{px + pw - 16}" stroke="{LINE}"/>')
+    b.append('</g>')
     return svg(w, h, "".join(b))
 
 
