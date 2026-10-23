@@ -273,8 +273,10 @@ def card(slug, title, desc, tags, kind):
 
 def projects_label():
     w, h = 900, 72
+    tip = (f'<text x="{w - 36}" y="54" text-anchor="end" class="mono" font-size="11" '
+           f'fill="{MUTED}">tip: right-click → open in new tab</text>')
     return svg(w, h, grid(w, h) + section_label(36, 30, "03 // PROJECTS",
-                                                "Selected work — click a card to open the repo"))
+                                                "Selected work — click a card to open the repo") + tip)
 
 
 def footer():

@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/kpis.svg?v=5" width="100%" alt="6 roles · 5 industries · 4 countries served remotely · Microsoft PL-300 certified"/>
+  <img src="assets/kpis.svg?v=6" width="100%" alt="6 roles · 5 industries · 4 countries served remotely · Microsoft PL-300 certified"/>
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/projects.svg?v=4" width="100%" alt="Selected work"/>
+  <img src="assets/projects.svg?v=5" width="100%" alt="Selected work"/>
 </p>
 
 <p align="center">
