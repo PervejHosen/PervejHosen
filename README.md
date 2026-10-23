@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/kpis.svg?v=4" width="100%" alt="6 roles · 5 industries · 4 countries served remotely · Microsoft PL-300 certified"/>
+  <img src="assets/kpis.svg?v=5" width="100%" alt="6 roles · 5 industries · 4 countries served remotely · Microsoft PL-300 certified"/>
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/toolkit.svg?v=4" width="100%" alt="Toolkit: Power BI, DAX, Looker Studio, Excel, SQL, Data Modeling, Power Query, Snowflake, BigQuery, Python, GA4"/>
+  <img src="assets/toolkit.svg?v=5" width="100%" alt="Toolkit: Power BI, DAX, Looker Studio, Excel, SQL, Data Modeling, Power Query, Snowflake, BigQuery, Databricks, Python"/>
 </p>
 
 <p align="center">

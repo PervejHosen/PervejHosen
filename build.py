@@ -110,9 +110,9 @@ def header():
 
 # ---------------------------------------------------------------- KPI tiles
 def kpis():
-    w, h = 900, 132
+    w, h = 900, 146
     tiles = [("6", "Roles held", "sales → data → BI lead", COBALT),
-             ("5", "Industries", "pharma · F&B · retail · mining …", COBALT),
+             ("5", "Industries", "pharma · F&B · e-commerce\nprop trading · mining", COBALT),
              ("4", "Countries served", "US · UAE · DE · AU — remote", COBALT),
              ("PL-300", "Microsoft certified", "Power BI Data Analyst", CORAL)]
     gap = 14
@@ -128,8 +128,10 @@ def kpis():
                  f'fill="{TXT}">{val}</text>'
                  f'<text x="{x + 18:.1f}" y="92" class="sans" font-size="14" font-weight="600" '
                  f'fill="{TXT}">{lab}</text>'
-                 f'<text x="{x + 18:.1f}" y="112" class="mono" font-size="11" fill="{MUTED}">'
-                 f'{esc(sub)}</text></g>')
+                 + "".join(f'<text x="{x + 18:.1f}" y="{112 + k * 16}" class="mono" font-size="11" '
+                           f'fill="{MUTED}">{esc(line)}</text>'
+                           for k, line in enumerate(sub.split("\n")))
+                 + '</g>')
     # transparent outer bg for tiles
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
             f'viewBox="0 0 {w} {h}" role="img">{STYLE}{"".join(b)}</svg>')
@@ -178,8 +180,8 @@ def career():
 STACK = [
     ("VISUALIZE", ["Power BI", "DAX", "Looker Studio", "Excel"]),
     ("QUERY & MODEL", ["SQL", "Data Modeling", "Power Query"]),
-    ("WAREHOUSE", ["Snowflake", "BigQuery"]),
-    ("ANALYZE", ["Python", "GA4", "RFM Segmentation", "Predictive ML"]),
+    ("WAREHOUSE", ["Snowflake", "BigQuery", "Databricks"]),
+    ("ANALYZE", ["Python", "RFM Segmentation", "Predictive ML"]),
 ]
 
 
