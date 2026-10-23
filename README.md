@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/pervejhosen/"><b>LinkedIn</b></a> &nbsp;·&nbsp;
   <a href="https://www.kaggle.com/pervejhosen"><b>Kaggle</b></a> &nbsp;·&nbsp;
-  <a href="https://pervejhosen2.wixsite.com/pervej"><b>Portfolio</b></a> &nbsp;·&nbsp;
+  <a href="https://pervejhosen.github.io/"><b>Portfolio</b></a> &nbsp;·&nbsp;
   <a href="mailto:pervejhosen2@gmail.com"><b>Email</b></a>
 </p>
 
