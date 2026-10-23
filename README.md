@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/career.svg" width="100%" alt="Experience: Sr. BI Developer at Transparent Partners (US), Data Analytics Engineer at Onwards Analytics (AU), BI Developer at Instant Funding (UK), Business Intelligence Analyst at Buddy & Selly (DE), Associate Data Analyst and Assistant Officer at Transcom Ltd (BD)"/>
+  <img src="assets/career.svg" width="100%" alt="Experience: Business Intelligence Analyst at Buddy & Selly (DE), BI Developer at Lunar Tech (Dubai), Sr. BI Developer at Leveor (US), Data Analytics Engineer at Onwards Analytics (AU), Associate Data Analyst and Assistant Officer at Transcom Ltd (BD)"/>
 </p>
 
 <p align="center">

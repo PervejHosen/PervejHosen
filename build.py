@@ -119,8 +119,8 @@ def header():
 def kpis():
     w, h = 900, 132
     tiles = [("6", "Roles held", "sales → data → BI lead", COBALT),
-             ("5", "Industries", "pharma · retail · finance …", COBALT),
-             ("4", "Countries served", "US · UK · DE · AU — remote", COBALT),
+             ("5", "Industries", "pharma · F&B · retail · mining …", COBALT),
+             ("4", "Countries served", "US · UAE · DE · AU — remote", COBALT),
              ("PL-300", "Microsoft certified", "Power BI Data Analyst", CORAL)]
     gap = 14
     tw = (w - gap * 3) / 4
@@ -144,10 +144,10 @@ def kpis():
 
 # ---------------------------------------------------------------- career
 ROLES = [
-    ("Sr. BI Developer", "Transparent Partners", "United States", "Consulting", True),
-    ("Data Analytics Engineer", "Onwards Analytics", "Australia", "Mining & business improvement", False),
-    ("BI Developer", "Instant Funding", "United Kingdom", "Prop trading", False),
     ("Business Intelligence Analyst", "Buddy & Selly", "Germany", "Circular fashion e-commerce", False),
+    ("BI Developer", "Lunar Tech", "Dubai, UAE", "Prop trading", False),
+    ("Sr. BI Developer", "Leveor", "United States", "Restaurant chain", False),
+    ("Data Analytics Engineer", "Onwards Analytics", "Australia", "Mining & business improvement", False),
     ("Associate Data Analyst", "Transcom Ltd", "Bangladesh", "Pharmaceutical", False),
     ("Assistant Officer, Sales & Distribution", "Transcom Ltd", "Bangladesh", "Pharmaceutical", False),
 ]
@@ -157,9 +157,7 @@ def career():
     w = 900
     top, row = 84, 56
     h = top + row * len(ROLES) + 30
-    b = [grid(w, h), section_label(36, 42, "01 // CAREER", "Experience — most recent first")]
-    b.append(f'<text x="{w - 36}" y="66" text-anchor="end" class="mono" font-size="11" '
-             f'fill="{MUTED}">bar = scope of role</text>')
+    b = [grid(w, h), section_label(36, 42, "01 // CAREER", "Experience")]
     track_x, track_w = 420, 440
     n = len(ROLES)
     for i, (title, co, country, ind, current) in enumerate(ROLES):
@@ -177,7 +175,7 @@ def career():
         b.append(f'<rect class="grow" style="animation-delay:{i * .1:.2f}s" x="{track_x}" '
                  f'y="{y + 10}" width="{track_w * frac:.0f}" height="26" rx="6" fill="{col}" '
                  f'fill-opacity="{1 if current else .55 + .07 * (n - i):.2f}"/>')
-        label = esc(ind) + ("  ● NOW" if current else "")
+        label = "   ".join(x for x in [esc(ind), "● ONGOING" if current else ""] if x)
         b.append(f'<text x="{track_x + 12}" y="{y + 27}" class="mono" font-size="11.5" '
                  f'fill="#FFFFFF">{label}</text>')
     return svg(w, h, "".join(b))
