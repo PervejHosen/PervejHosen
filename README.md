@@ -14,11 +14,11 @@
 </p>
 
 <p align="center">
-  <img src="assets/career.svg" width="100%" alt="Experience: Sr. BI Developer at Leveor (US), Data Analytics Engineer at Onwards Analytics (AU), BI Developer at Instant Funding (UK), Business Intelligence Analyst at Buddy & Selly (DE), Associate Data Analyst and Assistant Officer at Transcom Ltd (BD)"/>
+  <img src="assets/career.svg" width="100%" alt="Experience: Sr. BI Developer at Transparent Partners (US), Data Analytics Engineer at Onwards Analytics (AU), BI Developer at Instant Funding (UK), Business Intelligence Analyst at Buddy & Selly (DE), Associate Data Analyst and Assistant Officer at Transcom Ltd (BD)"/>
 </p>
 
 <p align="center">
-  <img src="assets/toolkit.svg" width="100%" alt="Toolkit: Power BI, DAX, Looker Studio, Excel, SQL, Data Modeling, Power Query, Snowflake, BigQuery, Python"/>
+  <img src="assets/toolkit.svg" width="100%" alt="Toolkit: Power BI, DAX, Looker Studio, Excel, SQL, Data Modeling, Power Query, Snowflake, BigQuery, Python, GA4"/>
 </p>
 
 <p align="center">
