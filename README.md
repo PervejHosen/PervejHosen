@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/header.svg?v=6" width="100%" alt="Pervej Hosen — Sr. BI Developer"/>
+  <img src="assets/header.svg?v=7" width="100%" alt="Pervej Hosen — Sr. BI Developer"/>
 </p>
 
 <p align="center">
@@ -10,29 +10,30 @@
 </p>
 
 <p align="center">
-  <img src="assets/kpis.svg?v=6" width="100%" alt="6 roles · 5 industries · 4 countries served remotely · Microsoft PL-300 certified"/>
+  <img src="assets/kpis.svg?v=7" width="100%" alt="6 roles · 5 industries · 4 countries served remotely · Microsoft PL-300 certified"/>
 </p>
 
 <p align="center">
-  <img src="assets/career.svg?v=6" width="100%" alt="Experience: Business Intelligence Analyst at Buddy & Selly (DE), BI Developer at Lunar Tech (Dubai), Sr. BI Developer at Leveor (US), Data Analytics Engineer at Onwards Analytics (AU), Associate Data Analyst and Assistant Officer at Transcom Ltd (BD)"/>
+  <img src="assets/career.svg?v=7" width="100%" alt="Experience: Business Intelligence Analyst at Buddy & Selly (DE), BI Developer at Lunar Tech (Dubai), Sr. BI Developer at Leveor (US), Data Analytics Engineer at Onwards Analytics (AU), Associate Data Analyst and Assistant Officer at Transcom Ltd (BD)"/>
 </p>
 
 <p align="center">
-  <img src="assets/toolkit.svg?v=6" width="100%" alt="Toolkit: Power BI, DAX, Looker Studio, Excel, SQL, Data Modeling, Power Query, Snowflake, BigQuery, Databricks, Python"/>
+  <img src="assets/toolkit.svg?v=7" width="100%" alt="Toolkit: Power BI, DAX, Looker Studio, Excel, SQL, Data Modeling, Power Query, Snowflake, BigQuery, Databricks, Python"/>
 </p>
 
 <p align="center">
-  <img src="assets/projects.svg?v=6" width="100%" alt="Selected work"/>
+  <img src="assets/projects.svg?v=7" width="100%" alt="Selected work"/>
 </p>
 
 <p align="center">
-  <a href="https://github.com/PervejHosen/customer-segmentation-sql"><img src="assets/card-rfm.svg?v=6" width="49%" alt="RFM Segmentation"/></a>
-  <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/bigquery-ml/employee-churn"><img src="assets/card-bqml.svg?v=6" width="49%" alt="BigQuery + Python ML"/></a>
-  <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/ga4-looker-studio/google-merch-store"><img src="assets/card-ga4.svg?v=6" width="49%" alt="Google Merch Store analysis"/></a>
-  <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/excel/hr-analytics"><img src="assets/card-hr.svg?v=6" width="49%" alt="HR Attrition Dashboard"/></a>
-  <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/excel/superstore-sales"><img src="assets/card-superstore.svg?v=6" width="49%" alt="Super Store Sales Dashboard"/></a>
+  <a href="https://github.com/PervejHosen/store-sales-forecasting"><img src="assets/card-forecast.svg?v=7" width="49%" alt="Store Sales Forecasting"/></a>
+  <a href="https://github.com/PervejHosen/customer-segmentation-sql"><img src="assets/card-rfm.svg?v=7" width="49%" alt="RFM Segmentation"/></a>
+  <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/bigquery-ml/employee-churn"><img src="assets/card-bqml.svg?v=7" width="49%" alt="BigQuery + Python ML"/></a>
+  <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/ga4-looker-studio/google-merch-store"><img src="assets/card-ga4.svg?v=7" width="49%" alt="Google Merch Store analysis"/></a>
+  <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/excel/hr-analytics"><img src="assets/card-hr.svg?v=7" width="49%" alt="HR Attrition Dashboard"/></a>
+  <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/excel/superstore-sales"><img src="assets/card-superstore.svg?v=7" width="49%" alt="Super Store Sales Dashboard"/></a>
 </p>
 
 <p align="center">
-  <img src="assets/footer.svg?v=6" width="100%" alt=""/>
+  <img src="assets/footer.svg?v=7" width="100%" alt=""/>
 </p>

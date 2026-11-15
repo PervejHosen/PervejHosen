@@ -80,7 +80,7 @@ def header():
 
     x = 40
     for label, col in [("Power BI", COBALT), ("SQL", COBALT), ("Snowflake", COBALT),
-                       ("PL-300 Certified", CORAL), ("Dhaka · Remote", MUTED)]:
+                       ("2x PL-300 Certified", CORAL), ("Dhaka · Remote", MUTED)]:
         c, cw = chip(x, 182, label, col)
         b.append(c)
         x += cw + 8
@@ -209,6 +209,8 @@ def toolkit():
 
 # ---------------------------------------------------------------- project cards
 PROJECTS = [
+    ("forecast", "Store Sales Forecasting", "Six-week daily forecast for 1,115 stores,\nerror cut by 40%",
+     ["SQL", "Python", "LightGBM"], "forecast"),
     ("rfm", "RFM Segmentation", "Customer segments by recency, frequency & spend",
      ["SQL", "Snowflake", "Excel"], "scatter"),
     ("bqml", "BigQuery + Python ML", "Modeling on BigQuery, reported in Looker Studio",
@@ -248,6 +250,15 @@ def glyph(kind, x, y):
     if kind == "hbars":
         return "".join(f'<rect x="{x}" y="{y + 4 + i * 12}" width="{ww}" height="8" rx="2" '
                        f'fill="{k if i == 0 else c}"/>' for i, ww in enumerate([56, 42, 30, 18]))
+    if kind == "forecast":
+        return (f'<path d="M{x + 30} {y + 24} L{x + 58} {y + 8} L{x + 58} {y + 30} L{x + 30} {y + 36} Z" '
+                f'fill="{k}" fill-opacity=".14"/>'
+                f'<polyline points="{x},{y + 40} {x + 8},{y + 32} {x + 16},{y + 38} {x + 24},{y + 26} '
+                f'{x + 30},{y + 30}" fill="none" stroke="{c}" stroke-width="3" stroke-linecap="round" '
+                f'stroke-linejoin="round"/>'
+                f'<polyline points="{x + 30},{y + 30} {x + 44},{y + 22} {x + 58},{y + 19}" fill="none" '
+                f'stroke="{k}" stroke-width="3" stroke-dasharray="4 4" stroke-linecap="round"/>'
+                f'<path d="M{x + 30} {y + 4}V{y + 44}" stroke="{c}" stroke-opacity=".35" stroke-dasharray="2 3"/>')
     return ""
 
 
@@ -258,7 +269,8 @@ def card(slug, title, desc, tags, kind):
          f'<rect x="0" y="22" width="4" height="34" rx="2" fill="{CORAL}"/>',
          f'<text x="22" y="40" class="sans" font-size="17" font-weight="700" fill="{TXT}">'
          f'{esc(title)}</text>',
-         f'<text x="22" y="62" class="sans" font-size="12.5" fill="{MUTED}">{esc(desc)}</text>',
+         "".join(f'<text x="22" y="{62 + i * 16}" class="sans" font-size="12.5" fill="{MUTED}">'
+                 f'{esc(line)}</text>' for i, line in enumerate(desc.split("\n"))),
          glyph(kind, w - 84, 20)]
     x = 22
     for t in tags:
