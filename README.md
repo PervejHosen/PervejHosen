@@ -29,6 +29,8 @@
   <a href="https://github.com/PervejHosen/customer-segmentation-sql"><img src="assets/card-rfm.svg?v=4" width="49%" alt="RFM Segmentation"/></a>
   <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/bigquery-ml/employee-churn"><img src="assets/card-bqml.svg?v=4" width="49%" alt="BigQuery + Python ML"/></a>
   <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/ga4-looker-studio/google-merch-store"><img src="assets/card-ga4.svg?v=4" width="49%" alt="Google Merch Store analysis"/></a>
+  <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/excel/hr-analytics"><img src="assets/card-hr.svg?v=4" width="49%" alt="HR Attrition Dashboard"/></a>
+  <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/excel/superstore-sales"><img src="assets/card-superstore.svg?v=4" width="49%" alt="Super Store Sales Dashboard"/></a>
 </p>
 
 <p align="center">
