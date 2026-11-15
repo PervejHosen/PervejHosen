@@ -4,14 +4,16 @@ import os
 OUT = os.path.join(os.path.dirname(__file__), "assets")
 os.makedirs(OUT, exist_ok=True)
 
-BG = "#0B1220"      # page
-PANEL = "#111A2E"   # tile
-LINE = "#1E2A44"    # borders / grid
-TXT = "#E6ECF8"
-MUTED = "#8A97B4"
-COBALT = "#3D6BFF"
-COBALT_D = "#1F4FD8"
-CORAL = "#FF6B5B"
+BG = "#EEE5D4"      # page: oat milk
+PANEL = "#F7F1E6"   # tile: oat card
+LINE = "#DCCFB6"    # borders / grid
+TXT = "#1D4A35"      # forest green
+MUTED = "#4F5E52"
+COBALT = "#1D4A35"   # main series: forest green
+COBALT_D = "#1D4A35"
+ON_GREEN = "#F6F0E4"
+CORAL = "#F2462E"    # accent fills: tomato
+CORAL_INK = "#B8301C"  # small red text on oat
 SANS = "'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif"
 MONO = "SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace"
 
@@ -53,11 +55,11 @@ def chip(x, y, label, color=COBALT, fill=None):
     return (f'<rect x="{x}" y="{y}" width="{w:.0f}" height="24" rx="12" fill="{fill}" '
             f'stroke="{color}" stroke-opacity=".7"/>'
             f'<text x="{x + w / 2:.0f}" y="{y + 16}" text-anchor="middle" class="mono" '
-            f'font-size="11.5" fill="{TXT}">{esc(label)}</text>'), w
+            f'font-size="11.5" fill="{ON_GREEN if fill != "none" else TXT}">{esc(label)}</text>'), w
 
 
 def section_label(x, y, code, title):
-    return (f'<text x="{x}" y="{y}" class="mono" font-size="11" fill="{CORAL}" '
+    return (f'<text x="{x}" y="{y}" class="mono" font-size="11" fill="{CORAL_INK}" '
             f'letter-spacing="1.5">{code}</text>'
             f'<text x="{x}" y="{y + 24}" class="sans" font-size="19" font-weight="700" '
             f'fill="{TXT}">{esc(title)}</text>')
@@ -69,7 +71,7 @@ def header():
     b = [grid(w, h)]
     b.append('<g transform="translate(0,-24)">')
 
-    b.append(f'<g class="fade"><text x="40" y="78" class="mono" font-size="12" fill="{CORAL}" '
+    b.append(f'<g class="fade"><text x="40" y="78" class="mono" font-size="12" fill="{CORAL_INK}" '
              f'letter-spacing="2">BUSINESS INTELLIGENCE · ANALYTICS ENGINEERING</text>'
              f'<text x="38" y="124" class="sans" font-size="44" font-weight="800" fill="{TXT}">'
              f'Pervej Hosen</text>'
@@ -197,7 +199,7 @@ def toolkit():
         x = 190
         for j, t in enumerate(tools):
             hot = j == 0
-            c, cw = chip(x, y, t, CORAL if hot else COBALT,
+            c, cw = chip(x, y, t, COBALT,
                          fill=COBALT_D if hot else None)
             b.append(c)
             x += cw + 8
@@ -209,8 +211,6 @@ def toolkit():
 PROJECTS = [
     ("rfm", "RFM Segmentation", "Customer segments by recency, frequency & spend",
      ["SQL", "Snowflake", "Excel"], "scatter"),
-    ("airbnb", "Airbnb Data Analysis", "Pricing & listing patterns explored in SQL",
-     ["SQL", "Snowflake"], "bars"),
     ("bqml", "BigQuery + Python ML", "Modeling on BigQuery, reported in Looker Studio",
      ["BigQuery", "Python", "Looker"], "line"),
     ("ga4", "Google Merch Store", "E-commerce funnel & behavior from GA4",
@@ -266,7 +266,7 @@ def card(slug, title, desc, tags, kind):
         b.append(c)
         x += cw + 6
     b.append(f'<text x="{w - 22}" y="105" text-anchor="end" class="mono" font-size="11.5" '
-             f'fill="{CORAL}">view repo →</text>')
+             f'fill="{CORAL_INK}">view repo →</text>')
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
             f'viewBox="0 0 {w} {h}" role="img">{STYLE}<g class="fade">{"".join(b)}</g></svg>')
 
