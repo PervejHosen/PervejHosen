@@ -26,12 +26,12 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/PervejHosen/SQL_Project-2"><img src="assets/card-rfm.svg?v=4" width="49%" alt="RFM Segmentation"/></a>
-  <a href="https://github.com/PervejHosen/SQL_Project-1"><img src="assets/card-airbnb.svg?v=4" width="49%" alt="Airbnb Data Analysis"/></a>
-  <a href="https://github.com/PervejHosen/BigQuery_PythonML_LookerStudio_Projects"><img src="assets/card-bqml.svg?v=4" width="49%" alt="BigQuery + Python ML"/></a>
-  <a href="https://github.com/PervejHosen/GA4_Looker_Studio_Projects-1"><img src="assets/card-ga4.svg?v=4" width="49%" alt="Google Merch Store analysis"/></a>
-  <a href="https://github.com/PervejHosen/Excel_Project-2"><img src="assets/card-hr.svg?v=4" width="49%" alt="HR Attrition Dashboard"/></a>
-  <a href="https://github.com/PervejHosen/Excel_Poject-1"><img src="assets/card-superstore.svg?v=4" width="49%" alt="Super Store Sales Dashboard"/></a>
+  <a href="https://github.com/PervejHosen/customer-segmentation-sql"><img src="assets/card-rfm.svg?v=4" width="49%" alt="RFM Segmentation"/></a>
+  <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/sql/airbnb-europe-snowflake"><img src="assets/card-airbnb.svg?v=4" width="49%" alt="Airbnb Data Analysis"/></a>
+  <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/bigquery-ml/employee-churn"><img src="assets/card-bqml.svg?v=4" width="49%" alt="BigQuery + Python ML"/></a>
+  <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/ga4-looker-studio/google-merch-store"><img src="assets/card-ga4.svg?v=4" width="49%" alt="Google Merch Store analysis"/></a>
+  <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/excel/hr-analytics"><img src="assets/card-hr.svg?v=4" width="49%" alt="HR Attrition Dashboard"/></a>
+  <a href="https://github.com/PervejHosen/bi-analytics-projects/tree/main/excel/superstore-sales"><img src="assets/card-superstore.svg?v=4" width="49%" alt="Super Store Sales Dashboard"/></a>
 </p>
 
 <p align="center">
